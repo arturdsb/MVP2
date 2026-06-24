@@ -1,0 +1,29 @@
+{
+    "coffeekits": [
+        {
+            "id": 1,
+            "title": "Kit econômico - 1Kg (4x250g)",
+            "price": 99.90,
+            "image": "/kiteco.png"
+        },
+        {
+            "id": 2,
+            "title": "Kit Família - 500g (2x250g)",
+            "price": 54.90,
+            "image": "/kitfamilia.png"
+        },
+        {
+            "id": 3,
+            "title": "Pacote Individual - 250g",
+            "price": 29.90,
+            "image": "/kitind.png"
+        },
+        {
+            "id": 4,
+            "title": "Kit Presente - 3 pacotes de 250g embalagem para presente",
+            "price": 150.90,
+            "image": "/kitpresente.png"
+        }
+
+    ]
+}
