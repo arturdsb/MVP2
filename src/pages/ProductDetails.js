@@ -3,6 +3,7 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import QuantityBuy from "../components/QuantityBuy";
 
 export default function ProductDetails() {
 
@@ -41,7 +42,7 @@ export default function ProductDetails() {
 
         <div className="detail-info">
 
-            <h1>{state.p.title}</h1>
+            <h1>{state.p.title} - Cód. {id}</h1>
 
             <p className="detail-description">
                 Produzido nas montanhas de Minas Gerais,
@@ -55,9 +56,7 @@ export default function ProductDetails() {
                 R$ {state.p.price.toFixed(2)}
             </div>
 
-            <button className="buy-btn">
-                Comprar Agora
-            </button>
+            <QuantityBuy product={state.p} />
 
         </div>
 
