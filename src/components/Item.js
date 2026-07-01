@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Item({ product }) {
 
@@ -47,9 +48,11 @@ export default function Item({ product }) {
 
             <div className="coffee-content">
 
-                <h3 className="coffee-title">
-                    {product.title}
-                </h3>
+                <Link to={`/product_details/${product.id}`} state={{p: product}} className="product-link">
+                    <h3 className="coffee-title">
+                        {product.title}
+                    </h3>
+                </Link>
 
                 <p className="coffee-description">
                     Grãos selecionados e torrados

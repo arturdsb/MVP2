@@ -81,6 +81,46 @@ body{
   color:#E8913A;
 }
 
+.hero-content{
+  max-width:700px;
+}
+
+.eyebrow{
+  display:inline-block;
+  margin-bottom:20px;
+  color:#E8913A;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  line-height:1.8;
+  margin:25px 0 40px;
+}
+
+.hero-btn{
+  display:inline-block;
+
+  background:#E8913A;
+  color:white;
+
+  padding:15px 35px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  transition:.3s;
+}
+
+.hero-btn:hover{
+  background:#c87423;
+  transform:translateY(-2px);
+}
+
 .products-section{
   padding:80px;
 }
@@ -165,6 +205,22 @@ body{
     color:var(--espresso);
 
     margin-bottom:12px;
+ 
+}
+
+.product-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.product-link:hover{
+    text-decoration:none;
+    color:inherit;
+}
+
+.product-link:hover .coffee-title{
+    color:var(--amber);
+    transition:.3s;
 }
 
 .coffee-description{
@@ -323,4 +379,136 @@ body{
 
 .footer-bottom p{
     color:rgba(255,255,255,.4);
+}
+
+
+
+/* ---------- PRODUCT DETAILS ---------- */
+
+.detail-content{
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    padding:0 30px;
+}
+
+.back{
+
+    background:none;
+
+    border:none;
+
+    color:var(--sienna);
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-bottom:35px;
+}
+
+.back:hover{
+
+    color:var(--amber);
+}
+
+.detail-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    padding:50px;
+}
+
+.detail-image-box{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.detailed-image{
+
+    width:100%;
+
+    max-width:450px;
+
+    border-radius:18px;
+}
+
+.detail-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.detail-info h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.4rem;
+
+    color:var(--espresso);
+
+    margin-bottom:20px;
+}
+
+.detail-description{
+
+    color:#6f6258;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+    font-size:1rem;
+}
+
+.detail-info .buy-btn{
+
+    width:260px;
+
+    font-size:1rem;
+
+    margin-top:10px;
+}
+
+@media (max-width:900px){
+
+    .detail-card{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .detail-image-box{
+
+        margin-bottom:20px;
+    }
+
+    .detail-info .buy-btn{
+
+        width:100%;
+    }
 }
