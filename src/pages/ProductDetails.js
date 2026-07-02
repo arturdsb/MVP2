@@ -7,7 +7,10 @@ import ProductInfo from "../components/ProductInfo";
 
 export default function ProductDetails() {
 
-    const { state } = useLocation();
+    //const { state } = useLocation();
+    const location = useLocation();
+    const { state } = location;
+
     const { id } = useParams();
     const navigate = useNavigate();
 
@@ -59,11 +62,15 @@ export default function ProductDetails() {
                             product={state.p}
                         />
 
+                         <p className="current-route">
+                            URL atual: {location.pathname}
+                        </p>
                     </div>
 
                 </div>
 
             </div>
+           
 
             <Footer />
         </>
