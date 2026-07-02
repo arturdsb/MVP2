@@ -31,9 +31,16 @@ export default function Products() {
         <>
             <Header />
 
-            <section className="products-section">
+            <section className="products-section loading-section">
 
-                <h2>Carregando produtos...</h2>
+                <div className="spinner"></div>
+
+                <h2>Carregando nossos cafés especiais...</h2>
+
+                <p>
+                    Aguarde um instante enquanto preparamos
+                    os melhores grãos para você.
+                </p>
 
             </section>
 
