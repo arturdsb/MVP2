@@ -4,16 +4,26 @@ export default function Header() {
   return (
     <header className="header">
 
-      <div className="logo">
+      <Link className="logo" to="/">
         Montês
-      </div>
+      </Link>
 
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/produtos">Produtos</Link>
+        <Link to="/">Home
+        </Link>
+        <Link to="/produtos"
+              state={{scrollTo:"produtos" }}>Produtos
+        </Link>
+        <Link to="/produtos"
+              state={{scrollTo:"contato"}}> Fale Conosco
+
+        </Link>
+
       </nav>
 
-      <Link to="/produtos" className="cta">
+      <Link to="/produtos" 
+            className="cta"
+            state={{scrollTo: "produtos"}}>
         Comprar
       </Link>
 

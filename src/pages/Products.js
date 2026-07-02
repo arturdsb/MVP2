@@ -6,11 +6,13 @@ import Hero from "../components/Hero";
 import Item from "../components/Item";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Products() {
 
   const [productList, setProductList] = useState([]);
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
 
@@ -23,6 +25,24 @@ export default function Products() {
     }, 1000);
 
   }, []);
+
+    useEffect(() => {
+
+    if (location.state?.scrollTo) {
+
+        const element = document.getElementById(location.state.scrollTo);
+
+        if (element) {
+
+            element.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+
+  }, [location]);
 
   if (loading) {
 
