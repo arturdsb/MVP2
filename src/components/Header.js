@@ -15,7 +15,7 @@ export default function Header() {
               state={{scrollTo:"produtos" }}>Produtos
         </Link>
         <Link to="/produtos"
-              state={{scrollTo:"contato"}}> Fale Conosco
+              state={{scrollTo:"contato"}}> Contato
 
         </Link>
 

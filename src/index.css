@@ -21,7 +21,7 @@ body{
   color:#2c1503;
 }
 
-.header{
+/*.header{
   height:80px;
   padding:0 40px;
 
@@ -30,6 +30,31 @@ body{
   align-items:center;
 
   background:#1A0A00;
+}
+*/
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:80px;
+    padding:0 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(26, 10, 0, 0.274);
+
+    backdrop-filter:blur(7px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 8px 24px rgba(0,0,0,.18);
+
+    z-index:1000;
 }
 
 .logo{
@@ -144,32 +169,6 @@ body{
 }
 
 /*.hero{
-  min-height:60vh;
-
-  display:flex;
-  align-items:center;
-
-  padding:80px;
-
-  background:#1A0A00;
-
-  color:white;
-}
-
-.hero h1{
-  font-size:4rem;
-  margin-bottom:20px;
-}
-
-.hero span{
-  color:#E8913A;
-}
-
-.hero-content{
-  max-width:700px;
-}
-*/
-.hero{
 
     min-height:70vh;
 
@@ -198,6 +197,36 @@ body{
     background-position:center center;
     background-repeat:no-repeat;
 
+}*/
+
+.hero{
+
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:160px 80px 80px;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15,10,7,.92) 0%,
+            rgba(20,12,7,.82) 40%,
+            rgba(20,12,7,.45) 70%,
+            rgba(20,12,7,.25) 100%
+        ),
+        url("../public/img/hero-coffee.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .eyebrow{
