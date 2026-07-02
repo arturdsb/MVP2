@@ -1,28 +1,38 @@
-export default function Hero() {
+import { Link } from "react-router-dom";
+
+export default function Hero({
+  eyebrow,
+  title,
+  highlight,
+  description,
+  buttonText,
+  buttonLink
+}) {
   return (
     <section className="hero">
-
       <div className="hero-content">
 
         <span className="eyebrow">
-          Café Especial
+          {eyebrow}
         </span>
 
         <h1>
-          Café fresco,
-          <br />
-          torrado em
-          <span> Minas Gerais</span>
+          {title}
+          <span>{highlight}</span>
         </h1>
 
-        <p>
-          Grãos especiais acima de 84 pontos,
-          torrados artesanalmente e enviados
-          direto para sua casa.
-        </p>
+        <p>{description}</p>
+
+        {buttonText && (
+          <Link
+            to={buttonLink}
+            className="hero-btn"
+          >
+            {buttonText}
+          </Link>
+        )}
 
       </div>
-
     </section>
-  )
+  );
 }

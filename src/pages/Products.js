@@ -77,7 +77,18 @@ export default function Products() {
 
       <Header />
 
-      <Hero />
+      <Hero
+        eyebrow="Café Especial"
+        title={
+          <>
+            Café fresco,
+            <br />
+            torrado em
+          </>
+        }
+        highlight=" Minas Gerais"
+        description="Grãos especiais acima de 84 pontos, torrados artesanalmente e enviados direto para sua casa."
+      />
 
       <section
         id="produtos"
