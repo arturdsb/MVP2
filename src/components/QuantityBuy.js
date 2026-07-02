@@ -1,8 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function QuantityBuy({ product }) {
 
     const [quantity, setQuantity] = useState(1);
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+
+        if(success){
+
+            const timer = setTimeout(() => {
+
+                setSuccess(false);
+
+            },3000);
+
+            return () => clearTimeout(timer);
+
+        }
+
+    },[success]);
 
     const minus = () => {
         if (quantity > 1) {
@@ -25,7 +42,7 @@ export default function QuantityBuy({ product }) {
             )
         ) {
 
-            alert("Pedido realizado com sucesso!");
+            setSuccess(true);
 
             setQuantity(1);
         }
@@ -66,6 +83,15 @@ export default function QuantityBuy({ product }) {
                 Comprar Agora
             </button>
 
+            {success && (
+
+                <p className="success-message">
+
+                    ✅ Pedido realizado com sucesso!
+
+                </p>
+
+            )}
         </>
 
     );

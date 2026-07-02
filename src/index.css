@@ -596,3 +596,20 @@ body{
 
     width:260px;
 }
+
+.success-message{
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    background:#dff6e4;
+
+    color:#1b5e20;
+
+    font-weight:bold;
+
+    text-align:center;
+}
