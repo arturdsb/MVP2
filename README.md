@@ -5,9 +5,13 @@ Projeto de apresentação Front-End em React, foi criada uma Página da marca de
 Para o desenvolvimento do projeto foram utilizados os seguintes Hooks:
 
 ✅ useState → gerenciamento de estado (lista de produtos e quantidade).
+
 ✅ useEffect → carregamento inicial da página (loading).
+
 ✅ useNavigate → navegação programática (botão "Voltar").
+
 ✅ useParams → captura do ID do produto pela URL.
+
 ✅ useLocation → transporte dos dados do produto entre páginas sem necessidade de nova consulta.
 
 Esses recursos foram combinados com os componentes reutilizáveis (Header, Footer, ProductInfo, QuantityBuy e Item), para demonstrar uma arquitetura organizada e aderente às boas práticas exigidas em projetos React.
