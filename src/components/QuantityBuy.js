@@ -40,6 +40,7 @@ export default function QuantityBuy({ product }) {
 
                 <button
                     className="quantity-btn"
+                    title="Remover uma unidade"
                     onClick={minus}
                 >
                     −
@@ -49,6 +50,7 @@ export default function QuantityBuy({ product }) {
 
                 <button
                     className="quantity-btn"
+                    title="Adicionar uma unidade"
                     onClick={plus}
                 >
                     +
@@ -58,6 +60,7 @@ export default function QuantityBuy({ product }) {
 
             <button
                 className="buy-btn"
+                title="Adicionar este item ao pedido"
                 onClick={buyProduct}
             >
                 Comprar Agora
