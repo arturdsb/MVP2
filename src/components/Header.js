@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header">
 
       <Link className="logo" to="/">
-        Montês
+        Mon<span>tê</span>s
       </Link>
 
       <nav>

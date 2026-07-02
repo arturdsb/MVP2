@@ -7,7 +7,6 @@ import ProductInfo from "../components/ProductInfo";
 
 export default function ProductDetails() {
 
-    //const { state } = useLocation();
     const location = useLocation();
     const { state } = location;
 

@@ -33,10 +33,35 @@ body{
 }
 
 .logo{
-  color:white;
-  font-size:2rem;
-  font-weight:bold;
-  text-decoration: none;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.logo span{
+
+    color:var(--amber);
+
+    transition:.3s;
+}
+
+.logo:hover{
+
+    transform:translateY(-1px);
+}
+
+.logo:hover span{
+
+    color:white;
 }
 
 .header nav{
@@ -45,22 +70,80 @@ body{
 }
 
 .header nav a{
-  color:white;
-  text-decoration:none;
+
+    position:relative;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:color .3s ease;
+}
+
+/* Linha animada */
+
+.header nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--amber);
+
+    transition:width .3s ease;
+}
+
+.header nav a:hover{
+
+    color:var(--amber);
+}
+
+.header nav a:hover::after{
+
+    width:100%;
 }
 
 .cta{
-  background:#C4622D;
-  color:white;
 
-  border:none;
+    background:var(--sienna);
 
-  padding:10px 20px;
+    color:white;
 
-  cursor:pointer;
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+    text-decoration: none;
+
+    transition:
+        background .3s,
+        transform .25s,
+        box-shadow .25s;
 }
 
-.hero{
+.cta:hover{
+
+    background:var(--amber);
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(232,145,58,.35);
+}
+
+/*.hero{
   min-height:60vh;
 
   display:flex;
@@ -84,6 +167,37 @@ body{
 
 .hero-content{
   max-width:700px;
+}
+*/
+.hero{
+
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15,10,7,.92) 0%,
+            rgba(20,12,7,.82) 40%,
+            rgba(20,12,7,.45) 70%,
+            rgba(20,12,7,.25) 100%
+        ),
+        url("../public/img/hero-coffee.png");
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
 }
 
 .eyebrow{
@@ -120,6 +234,34 @@ body{
 .hero-btn:hover{
   background:#c87423;
   transform:translateY(-2px);
+}
+
+.hero-content{
+
+    max-width:650px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        transparent 55%,
+        rgba(0,0,0,.25) 100%
+    );
+
+    pointer-events:none;
 }
 
 .products-section{
@@ -593,11 +735,6 @@ body{
 .detail-info .quantity-box{
 
     justify-content:flex-start;
-}
-
-.detail-info .buy-btn{
-
-    width:260px;
 }
 
 .success-message{
