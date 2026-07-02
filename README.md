@@ -1,5 +1,6 @@
-# MVP2
-Projeto de apresentação Front-End em React, foi criada uma Página de uma marca de Café Especial, o objetivo foi tentar aproximar ao máximo do que é praticadode um produto real, tendo sido criado o branding, identidade visual e produtos da marca.
+<h1># MVP2 - Montês Café</h1>
+
+Projeto de apresentação Front-End em React, foi criada uma Página da marca de Café Especial Montês Café, o objetivo foi tentar aproximar ao máximo do que é praticadode um produto real, tendo sido criado o branding, identidade visual e produtos da marca.
 
 Para o desenvolvimento do projeto foram utilizados os seguintes Hooks:
 
