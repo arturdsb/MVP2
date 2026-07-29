@@ -1,7 +1,7 @@
 {
-  "homepage": "https://arturdsb.github.io/MVP2",
   "name": "MVP2",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
